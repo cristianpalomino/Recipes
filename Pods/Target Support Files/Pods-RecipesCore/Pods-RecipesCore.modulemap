@@ -1,0 +1,6 @@
+framework module Pods_RecipesCore {
+  umbrella header "Pods-RecipesCore-umbrella.h"
+
+  export *
+  module * { export * }
+}
