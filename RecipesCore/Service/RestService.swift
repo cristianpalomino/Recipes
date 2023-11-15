@@ -27,7 +27,7 @@ final class RestService: ServiceProtocol {
             }
 
             let request = RecipesRequest()
-            client.send(request) { result in
+            self.client.send(request) { result in
                 switch result {
                 case let .success(response):
                     return single(.success(response))
@@ -48,7 +48,7 @@ final class RestService: ServiceProtocol {
             }
 
             let request = RecipeByIdRequest(id: id)
-            client.send(request) { result in
+            self.client.send(request) { result in
                 switch result {
                 case let .success(response):
                     return single(.success(response))
